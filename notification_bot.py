@@ -1,9 +1,8 @@
 import praw
-import numpy as np 
-from PIL import Image
 
-reddit = praw.Reddit('caption')
+reddit = praw.Reddit('notification')
 
+# TODO: create a separate bot account for testing this bot
 subreddit = reddit.subreddit("caption_meme_bot_test")
 
 for submission in subreddit.hot(limit=5):
